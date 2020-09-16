@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <meta charset="utf-8">
+        <title>Cálculo do Vetor</title>
+        <style>
+            body{
+                text-align: center;
+                background-color: beige;
+                margin: 0 auto;
+                width: 500px;
+            }
+            header{
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Cálculo do Vetor</h1>
+        </header>
+        <body>
+        
+            <form method="post">  
+            <th:block th:include="mensagem"></th:block>          	
+                <label>Informe o valor multiplo de 10 entre 100 e 1000</label>
+                <input type="number" value="" name="valor">
+                <br><br>
+                <label>Cálculo com base nas posições </label>
+                <select name="opcao">
+                    <option value="i">impares</option>
+                    <option value="p">Pares</option>
+                </select>
+                <label> do vetor</label>
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </body>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

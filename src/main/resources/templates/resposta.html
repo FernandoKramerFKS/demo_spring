@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                text-align: center;
+                background-color: beige;
+                margin: 0 auto;
+                width: 500px;
+            }
+            header{
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Resposta</h1>
+        </header>
+        <div th:object="${vetors}" class="box">
+        	<label>Valor Digitado pelo Usuário:</label>
+        	<input type="number" th:field="*{valor}">
+        	<br><br>
+        	<label>Opção de cálculo escolida:</label>
+        	<input type="text" th:field="*{opcao}">
+        	<br><br>
+        	<label>Valor do cálculo do vetor com base na ordem escolida:</label>
+        	<input type="number" th:field="*{resposta}">
+        	<br><br>
+        	<a href="/">Voltar a página anterior</a>
+        </div>
+        <footer>            
+        </footer>
+    </body>
+</html>
